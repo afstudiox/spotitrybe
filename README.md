@@ -20,4 +20,4 @@ git checkout lecture/3.1
 
 ## Estrutura
 
-Todos os conteúdos dados em aulas estarão no seu respectivo Pull Request! 😉
+Todos os conteúdos dados em aulas estarão no seu respectivo Pull Request! 😉😉
