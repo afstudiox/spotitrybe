@@ -181,21 +181,23 @@ const renderPlaylists = (playlists) => {
 const renderTracks = (tracks) => {
   const tracksCards = document.querySelector('.tracks-cards');
 
-  tracks.forEach((track) => {
-    const section = document.createElement('section');
-    section.className = 'track text-card';
-    section.id = track.id;
-    section.value = track.track.preview_url;
+  tracks
+    .filter((track) => track.track && track.track.preview_url !== null)
+    .forEach((track) => {
+      const section = document.createElement('section');
+      section.className = 'track text-card';
+      section.id = track.id;
+      section.value = track.track.preview_url;
 
-    const paragraph = document.createElement('p');
-    paragraph.className = 'track-title';
-    paragraph.innerHTML = track.track.name;
-  
+      const paragraph = document.createElement('p');
+      paragraph.className = 'track-title';
+      paragraph.innerHTML = track.track.name;
+    
 
-    section.appendChild(paragraph);
-    section.addEventListener('click', handleTrackCardClick);
+      section.appendChild(paragraph);
+      section.addEventListener('click', handleTrackCardClick);
 
-    tracksCards.appendChild(section);
+      tracksCards.appendChild(section);
   });
 };
 
