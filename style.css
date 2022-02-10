@@ -21,4 +21,112 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--cinza4);
+  color: white;
+}
+
+header {
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 100px;;
+}
+
+header .logo-title {
+  display: flex;
+  align-items: center;
+}
+
+header .title {
+  font-size: 2.5 rem;
+}
+
+header .player-container {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.step h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.genre-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.genre-cards section {
+  background-color: var(--cinza3);
+  margin: 20px;
+  padding: 20px;
+}
+
+.genre-cards section:hover {
+  background-color: var(--cinza2);
+}
+
+.genre-cards img {
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.genre-cards p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.playlist-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.playlist-text-card {
+  background-color: var(--cinza2);
+  margin: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+.playlist-text-card:hover {
+  background-color: var(--cinza1);
+}
+
+.track-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.item-selected {
+  background-color: var(--cinza-claro) !important;
+  color: var(--cinza3) !important;
 }
